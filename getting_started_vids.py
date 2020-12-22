@@ -3,6 +3,10 @@ import cv2 as cv
 
 #argument can be either the device index or the name of the video file
 cap = cv.VideoCapture(0)
+cap.set(3, 640)
+cap.set(4, 480)
+#brightness
+cap.set(10, 100)
 
 #define the codec and create a VideoWriter object
 fourcc = cv.VideoWriter_fourcc(*'XVID')
